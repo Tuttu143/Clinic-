@@ -1,0 +1,6 @@
+{
+  "name": "CarePulse - Clinic & Appointment Management Platform",
+  "description": "Comprehensive clinic website, online appointment booking, WhatsApp Cloud API automation, and patient CRM with PWA experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>CarePulse - Clinic & Appointment Management Platform</title>
+    <meta name="description" content="Comprehensive clinic website, online appointment booking, WhatsApp Cloud API automation, and patient CRM with PWA experience." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CarePulse - Clinic & Appointment Management Platform" />
+    <meta property="og:description" content="Comprehensive clinic website, online appointment booking, WhatsApp Cloud API automation, and patient CRM with PWA experience." />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CarePulse - Clinic & Appointment Management Platform" />
+    <meta name="twitter:description" content="Comprehensive clinic website, online appointment booking, WhatsApp Cloud API automation, and patient CRM with PWA experience." />
+    
+    <!-- PWA & Mobile Web App Meta -->
+    <meta name="theme-color" content="#0d9488" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="CarePulse" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+
+    <!-- Google Fonts: Plus Jakarta Sans for clean medical typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org MedicalClinic Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "CarePulse Multi-Speciality Clinic & Diagnostic Centre",
+      "image": "/icon.svg",
+      "telephone": "+91-98765-43210",
+      "email": "care@carepulsehealth.in",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Suite 401, MediCentre Plaza, Ring Road",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "postalCode": "560034",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "medicalSpecialty": [
+        "Cardiology",
+        "Dermatology",
+        "Pediatrics",
+        "Orthopedics",
+        "GeneralMedicine",
+        "Gynecology"
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased font-sans selection:bg-teal-100 selection:text-teal-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
